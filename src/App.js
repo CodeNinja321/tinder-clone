@@ -9,20 +9,24 @@ import {
 
 import './App.css';
 import SwipeButtons from './SwipeButtons';
+import Chats from './Chats';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      
       <Router>
+        
         <Switch>
           <Route path="/profile">
             <h1>Profile</h1>
           </Route>
-          <Route path="/chat">
-            <h1>Chat</h1>
+          <Route path="/chats">
+            <Header backButton='/' />
+            <Chats />
           </Route>
           <Route path="/">
+            <Header />
             <TinderCards />
             <SwipeButtons />
           </Route>
