@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import SwipeButtons from './SwipeButtons';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           </Route>
           <Route path="/">
             <TinderCards />
+            <SwipeButtons />
           </Route>
         </Switch>
         {/* Card */}
