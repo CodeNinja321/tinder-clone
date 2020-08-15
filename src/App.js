@@ -10,6 +10,7 @@ import {
 import './App.css';
 import SwipeButtons from './SwipeButtons';
 import Chats from './Chats';
+import ChatScreen from './ChatScreen';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
       <Router>
         
         <Switch>
-          <Route path="/profile">
-            <h1>Profile</h1>
+          <Route path="/chats/:person">
+            <Header backButton='/chats' />
+            <ChatScreen />
           </Route>
           <Route path="/chats">
             <Header backButton='/' />
